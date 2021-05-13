@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { AliComponent } from './ali/ali.component';
+import { CarouselPauseComponent } from './carousel-pause/carousel-pause.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AliComponent
+    CarouselPauseComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    Ng2CarouselamosModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
