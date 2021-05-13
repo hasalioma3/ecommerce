@@ -15,7 +15,7 @@
         {% for image in images %}
         <!-- item -->
             <div class="carousel-item text-center text-dark mb-5 {% if forloop.first %} active{% endif %}">
-                <img src="{{ image.img.url }}" class="img-fluid rounded-circle mb-3" style="width: 100%;">
+                <img src="{{ image.img.url }}" class="img mb-3" style="width: 100%;">
                 <p class="px-3">{{ image.name }}</p>
             </div>
         <!-- end item -->
